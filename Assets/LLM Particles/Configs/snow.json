@@ -1,0 +1,62 @@
+{
+    "MainModule": {
+        "startLifetime": 20,
+        "startColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+        },
+        "maxParticles": 1000,
+        "startSize": 0.5,
+        "startSpeed": 0.2,
+        "gravityModifier": 0.1
+    },
+    "ShapeModule": {
+        "shapeType": "Hemisphere",
+        "scale": {
+            "x": 10,
+            "y": 10,
+            "z": 10
+        },
+        "alignToDirection": false,
+        "arc": 360,
+        "arcMode": "Random",
+        "arcSpread": 0.0,
+        "radius": 5
+    },
+    "VelocityOverLifetimeModule": {
+        "x": {
+            "type": "curve",
+            "scalar": 0.1,
+            "keyPoints": [
+                [
+                    0,
+                    0.5
+                ],
+                [
+                    1,
+                    0.5
+                ]
+            ]
+        },
+        "y": {
+            "type": "constant",
+            "value": -0.5
+        },
+        "z": {
+            "type": "curve",
+            "scalar": 0.1,
+            "keyPoints": [
+                [
+                    0,
+                    0.5
+                ],
+                [
+                    1,
+                    0.5
+                ]
+            ]
+        }
+    }
+}

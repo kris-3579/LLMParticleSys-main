@@ -1,0 +1,117 @@
+{
+    "MainModule": {
+        "duration": 60,
+        "startColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+        },
+        "maxParticles": 1000,
+        "startSize": 0.5,
+        "gravityModifier": 0.1,
+        "startSpeed": {
+            "min": 0.5,
+            "max": 1.0
+        },
+        "simulationSpace": "World",
+        "startLifetime": {
+            "min": 8,
+            "max": 12
+        }
+    },
+    "ShapeModule": {
+        "shapeType": "Box",
+        "scale": {
+            "x": 50,
+            "z": 50,
+            "y": 1
+        },
+        "position": {
+            "x": 0,
+            "y": 10,
+            "z": 0
+        }
+    },
+    "ColorOverLifetimeModule": {
+        "color_key": [
+            {
+                "color": {
+                    "r": 255,
+                    "g": 255,
+                    "b": 255
+                },
+                "time": 0
+            }
+        ],
+        "alpha_key": [
+            {
+                "value": 1,
+                "time": 0
+            },
+            {
+                "value": 0,
+                "time": 1
+            }
+        ]
+    },
+    "VelocityOverLifetimeModule": {
+        "x": {
+            "type": "curve",
+            "keyPoints": [
+                [
+                    0,
+                    0.3
+                ],
+                [
+                    0.5,
+                    0.5
+                ],
+                [
+                    1,
+                    0.3
+                ]
+            ]
+        },
+        "z": {
+            "type": "curve",
+            "keyPoints": [
+                [
+                    0,
+                    -0.5
+                ],
+                [
+                    1,
+                    0
+                ]
+            ]
+        }
+    },
+    "EmissionModule": {
+        "rateOverTime": 75.0,
+        "rateOverDistance": 0.0,
+        "bursts": [
+            {
+                "Time": 5.0,
+                "Count": 200,
+                "Cycles": 0,
+                "Interval": 10.0,
+                "Probability": 1.0
+            },
+            {
+                "Time": 15.0,
+                "Count": 250,
+                "Cycles": 0,
+                "Interval": 15.0,
+                "Probability": 1.0
+            },
+            {
+                "Time": 30.0,
+                "Count": 150,
+                "Cycles": 0,
+                "Interval": 20.0,
+                "Probability": 1.0
+            }
+        ]
+    }
+}

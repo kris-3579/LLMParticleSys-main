@@ -1,0 +1,16 @@
+{
+    "MainModule": {
+        "startSize": 0.1,
+        "startLifetime": 2,
+        "gravityModifier": 0,
+        "startColor": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 1.0,
+            "a": 1.0
+        },
+        "sizeOverLifetime": {
+            "size": 1
+        }
+    }
+}
